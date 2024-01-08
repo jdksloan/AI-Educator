@@ -1,0 +1,5 @@
+python-dotenv~=1.0.0
+fastapi~=0.108.0
+langserve[all]
+openai
+langchain~=0.1.0
