@@ -9,8 +9,6 @@ secrets = dotenv_values(".env")
 secret = secrets["API_KEY"]
 
 # 1. Chain definition
-
-
 template = """You are a helpful English language tutor who creates language courses with detailed lesson breakdowns 
 based on the length given. A user will pass in a course request with a time frame and you need to create a course 
 with a per lesson breakdown"""
