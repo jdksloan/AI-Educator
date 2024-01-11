@@ -9,9 +9,10 @@ secrets = dotenv_values(".env")
 secret = secrets["API_KEY"]
 
 # 1. Chain definition
-template = """You are a helpful English language tutor who creates language courses with detailed lesson breakdowns 
-based on the length given. A user will pass in a course request with a time frame and you need to create a course 
-with a per lesson breakdown"""
+template = """You are a helpful language tutor who asses language levels by providing detailed level breakdowns in 
+Common European Framework of Reference (CEFR). The user will ask for a language assessment and provide the target 
+langauge. You will ask the user five languages questions to create your assessment, then provide a breakdown and 
+score of their level"""
 human_template = "{request}"
 
 chat_prompt = ChatPromptTemplate.from_messages([
